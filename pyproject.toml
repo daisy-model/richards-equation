@@ -1,0 +1,21 @@
+[project]
+name = "daisy_solvers"
+version = "0.0.1"
+dependencies = [
+             "numpy",
+]
+
+[build-system]
+requires = [
+    "setuptools"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["daisy_solvers.ogden2017"]
+
+[tool.pylint.messages_control] 
+disable = [
+    'trailing-whitespace',
+    'trailing-newlines',
+    ]
